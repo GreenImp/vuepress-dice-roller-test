@@ -6,13 +6,13 @@ This is some content without the dice roller plugin
 
 But when we use the Dice Roller plugin with the closing fence inline like so;
 
-::: rolls 4d6 :::
+::: roll 4d6 :::
 
 ## This header doesn't show in the menu
 
 But if we move the closing fence to the next line:
 
-::: rolls 2d10
+::: roll 2d10
 :::
 
 ## This header works again
