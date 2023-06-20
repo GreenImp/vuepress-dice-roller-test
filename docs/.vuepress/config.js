@@ -7,37 +7,6 @@ export default defineUserConfig({
   description: 'A Vuepress test to test bug #1329',
   theme: defaultTheme({
     docsDir: 'docs',
-    navbar: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          text: 'Guide',
-          children: [
-            '/guide/',
-            '/guide/getting-started',
-            '/guide/cli',
-            '/guide/usage',
-            '/guide/customisation',
-          ],
-          collapsible: true,
-        },
-        {
-          text: 'Notation',
-          children: [
-            '/guide/notation/',
-            '/guide/notation/dice',
-            '/guide/notation/modifiers',
-            '/guide/notation/group-rolls',
-            '/guide/notation/roll-descriptions',
-            '/guide/notation/maths',
-          ],
-          collapsible: true,
-        },
-      ],
-    },
   }),
   plugins: [
     diceRollerPlugin(),
